@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue.js Using Properties in Component</title>
+</head>
+
+<body>
+    <div id="app">
+        <blog-post v-for="post in posts" :key="post.id" :post="post">
+        </blog-post>
+    </div>
+    <script type="text/javascript" src="../vue.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

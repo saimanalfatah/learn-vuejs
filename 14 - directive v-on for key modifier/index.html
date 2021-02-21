@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vue.js v-on for key modifier</title>
+</head>
+
+<body>
+    <div id="app">
+        <label for="">Press Enter Key</label>
+        <input 
+            type="text"
+            v-on:keyup.enter="message = 'Lorem ipsum dolor sit amet.'"
+        >
+        <br>
+        <label>Press Any Key</label>
+        <input 
+            type="text"
+            @keyup.esc="escKey"
+            @keyup.space="spaceKey"
+            @keyup.up="upKey"
+            @keyup.down="downKey"
+            @keyup.65="aKey"
+        >
+        <br>
+        {{ message }}
+    </div>
+    <script type="text/javascript" src="../vue.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
